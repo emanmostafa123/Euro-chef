@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ChefService } from 'src/app/services/chef.service';
+import { chefs } from 'src/assets/mock';
 import { Chef } from '../../interfaces/chef';
+import {ThemePalette} from '@angular/material/core';
+
 
 @Component({
   selector: 'app-chef-list',
@@ -10,7 +13,8 @@ import { Chef } from '../../interfaces/chef';
 export class ChefListComponent implements OnInit {
 
   chefs : Chef[] = []
-
+  
+  
   constructor(private chefservice:ChefService) { }
 
   ngOnInit(): void {
@@ -20,7 +24,13 @@ export class ChefListComponent implements OnInit {
   private getChefs(){
     this.chefs = this.chefservice.getPenddingChef()
   }
-
   
 
+  show(){
+    console.log(chefs);
+    
+  }
+  
+ 
 }
+

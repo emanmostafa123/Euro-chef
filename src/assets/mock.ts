@@ -3,7 +3,7 @@ import { Chef } from '../app/interfaces/chef';
 export const chefs: Chef[] = [
   {
     Identifiant: 1,
-    Reference:  'Add email validation in registration form',
+    Reference:  'Title1',
     Description: 'Validate the email entered in the user registration form',
     Fourinisser: 'high',
     Prixdachat: 'Feature',
@@ -12,7 +12,7 @@ export const chefs: Chef[] = [
   },
   {
     Identifiant: 2,
-    Reference:  'Add email validation in registration form',
+    Reference:  'Title2',
     Description: 'Validate the email entered in the user registration form ',
     Fourinisser: 'high',
     Prixdachat: 'Feature',
@@ -21,7 +21,7 @@ export const chefs: Chef[] = [
   },
   {
     Identifiant: 3,
-    Reference:  'Add email validation in registration form',
+    Reference:  'Title3',
     Description: 'Validate the email entered in the user registration form',
     Fourinisser: 'high',
     Prixdachat: 'Feature',

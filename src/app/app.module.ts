@@ -11,9 +11,9 @@ import { ArticlesComponent } from './views/articles/articles.component';
 import { AppRoutingModule } from './app-routing.module'
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateChefComponent } from './views/create-chef/create-chef.component';
-// import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from './views/dialog/dialog.component';
+import { MatTabsModule } from '@angular/material/tabs'
 
 
 @NgModule({
@@ -33,7 +33,8 @@ import { DialogComponent } from './views/dialog/dialog.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

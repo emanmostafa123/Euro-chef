@@ -15,7 +15,7 @@
     <clr-dg-column [clrDgField]="'Statut'">Statut</clr-dg-column>
 
 
-    <clr-dg-row *clrDgItems="let chef of chefs">
+    <clr-dg-row *clrDgItems="let chef of chefs; let i = index">
         <clr-dg-cell>{{chef.Identifiant}}</clr-dg-cell>
         <clr-dg-cell>{{chef.Reference}}</clr-dg-cell>
         <clr-dg-cell>{{chef.Description}}</clr-dg-cell>

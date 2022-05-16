@@ -1,5 +1,8 @@
 
-
+<mat-tab-group>
+    <mat-tab label="Articles">
+      <ng-template matTabContent>
+        
 <div class="box">
     <br>
     <span style="margin-left: 1%;"><a routerLink="">Home ></a><a routerLink="">Gestion des Contenus ></a><a routerLink="/articles"><strong>Articles</strong></a></span>
@@ -17,15 +20,47 @@
     <div style="display:flex;" *ngIf="showCreateChef === false">
         <div class="btn-div">
             <button (click)="showCreateChef = true">+</button>
+            <div class="dropdown">
+                <button class="dropbtn">+
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a *ngFor="let chef of chefs;">{{chef.Reference}}</a>
+                </div>
+              </div>
+            <button (click)="addTab()" style="font-size: 10px; line-height: 8px;">add tab</button>
             <button>+</button>
-            <button>+</button>
-            <button>+</button>
-        
         </div>
+        
         <div class="table-div">
             <app-chef-list></app-chef-list>
         </div>
     </div>
     <app-create-chef *ngIf="showCreateChef == true " (formClose)="onCloseCreate()"></app-create-chef>
 </div>
+
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="{{link}}" *ngFor="let link of links;">
+      <ng-template matTabContent>
+        <div style="width: 25%; padding: 10px;"  *ngFor="let chef of getItems()">
+            <div class="text-div">
+                <h3>Titre Titre</h3>
+                <hr>
+                <p><strong>Statue</strong></p>
+                <p>{{chef.Statut}}</p>
+                <br>
+                <p><strong>Description</strong></p>
+                <p>{{chef.Description}}</p>
+                <p><strong>Reference :</strong></p>
+                    <p>{{chef.Reference}}</p>
+            </div>
+            <br>
+        </div>
+      </ng-template>
+    </mat-tab>
+    
+  </mat-tab-group>
+
+
 

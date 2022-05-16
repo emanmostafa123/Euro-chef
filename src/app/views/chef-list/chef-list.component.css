@@ -5,3 +5,8 @@ clr-dg-row:nth-child(even){
 clr-dg-row:hover {
     background-color: #ddd;
 }
+
+
+.btn:hover{
+    background-color: #ddd!important;
+}
