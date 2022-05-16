@@ -1,0 +1,29 @@
+
+
+
+<p>Nombre d'enregistrements: <strong>{{chefs.length}}</strong></p>
+
+
+<clr-datagrid>
+
+    <clr-dg-column [clrDgField]="'Identifiant'" [clrDgColType]="'number'">Identifiant</clr-dg-column>
+    <clr-dg-column [clrDgField]="'Reference'">Reference</clr-dg-column>    
+    <clr-dg-column [clrDgField]="'Description'">Description</clr-dg-column>
+    <clr-dg-column [clrDgField]="'Fourinisser'">Fourinisser</clr-dg-column>
+    <clr-dg-column [clrDgField]="'Prixdachat'">Prix d'achat</clr-dg-column>
+    <clr-dg-column [clrDgField]="'PrixPublique'">Prix Publique</clr-dg-column>
+    <clr-dg-column [clrDgField]="'Statut'">Statut</clr-dg-column>
+
+
+    <clr-dg-row *clrDgItems="let chef of chefs">
+        <clr-dg-cell>{{chef.Identifiant}}</clr-dg-cell>
+        <clr-dg-cell>{{chef.Reference}}</clr-dg-cell>
+        <clr-dg-cell>{{chef.Description}}</clr-dg-cell>
+        <clr-dg-cell>{{chef.Fourinisser}}</clr-dg-cell>
+        <clr-dg-cell>{{chef.Prixdachat}}</clr-dg-cell>
+        <clr-dg-cell>{{chef.PrixPublique}}</clr-dg-cell>
+        <clr-dg-cell>{{chef.Statut}}</clr-dg-cell>
+
+    </clr-dg-row>
+
+</clr-datagrid>

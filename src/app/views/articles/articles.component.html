@@ -1,0 +1,31 @@
+
+
+<div class="box">
+    <br>
+    <span style="margin-left: 1%;"><a routerLink="">Home ></a><a routerLink="">Gestion des Contenus ></a><a routerLink="/articles"><strong>Articles</strong></a></span>
+    
+    <span class="Visualisation">
+        Visualisation: 
+        <select name="Visualisation">
+            <option value="Admin">Admin</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+      </select>
+    </span>
+
+    <div style="display:flex;" *ngIf="showCreateChef === false">
+        <div class="btn-div">
+            <button (click)="showCreateChef = true">+</button>
+            <button>+</button>
+            <button>+</button>
+            <button>+</button>
+        
+        </div>
+        <div class="table-div">
+            <app-chef-list></app-chef-list>
+        </div>
+    </div>
+    <app-create-chef *ngIf="showCreateChef == true " (formClose)="onCloseCreate()"></app-create-chef>
+</div>
+

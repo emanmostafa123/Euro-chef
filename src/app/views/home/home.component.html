@@ -1,0 +1,54 @@
+<div *ngIf="showCreateChef === false">
+    <h1>Bienvenue M.Dumoulin</h1>
+
+
+<div class="container-div" style="display: flex; width:100%; padding-left: 1%;">
+
+
+    <div class="table-div" style="width: 80%; padding: 10px;">
+        <h3>Titre Titre</h3>
+        <hr>
+        <div style="display: flex;">
+            <p style="margin-top: 0px;"><strong>Texte Texte:</strong></p>
+            <div class="btn-div">
+                <button (click)="showCreateChef = true">+</button>
+                <button>+</button>
+                <button>+</button>
+            </div>
+
+        </div>
+        <app-chef-list ></app-chef-list>
+
+    </div>
+    <div style="width: 25%; padding: 10px;">
+        <div class="text-div">
+            <h3>Titre Titre</h3>
+            <hr>
+            <p><strong>Statue</strong></p>
+            <p>Publie</p>
+            <br>
+            <p><strong>Lorem ipsum :</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia voluptatem ex corporis quidem eos
+                molestiae, labore reiciendis autem. Asperiores error nam architecto quos culpa doloribus laudantium possimus
+                nostrum vitae</p>
+            <p><strong>Lorem ipsum :</strong></p>
+                <p>-</p>
+        </div>
+        <br>
+        <div class="text-div">
+            <h3>Titre Titre</h3>
+            <hr>
+            <p><strong>Statue</strong></p>
+            <p>Publie</p>
+            <br>
+            <p><strong>Lorem ipsum :</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia voluptatem ex corporis quidem eos
+                molestiae, labore reiciendis autem. Asperiores error nam architecto quos culpa doloribus laudantium possimus
+                nostrum vitae</p>
+            <p><strong>Lorem ipsum :</strong></p>
+                <p>-</p>
+        </div>
+    </div>
+</div>
+</div>
+<app-create-chef *ngIf="showCreateChef == true " (formClose)="onCloseCreate()"></app-create-chef>

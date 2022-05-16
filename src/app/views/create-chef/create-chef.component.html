@@ -1,0 +1,32 @@
+<form clrForm *ngIf="chefForm" [formGroup]="chefForm" (ngSubmit)="addChef()">
+    <clr-input-container>
+        <label>Reference</label>
+        <input clrInput formControlName="Reference"/>
+    </clr-input-container>
+    <clr-textarea-container>
+        <label>Description</label>
+        <textarea clrTextarea formControlName="Description"></textarea>
+    </clr-textarea-container>
+    <clr-input-container>
+        <label>Fourinisser</label>
+        <input clrInput formControlName="Fourinisser"/>
+    </clr-input-container>
+    <clr-input-container>
+        <label>Prixdachat</label>
+        <input clrInput formControlName="Prixdachat"/>
+    </clr-input-container>
+    <clr-input-container>
+        <label>PrixPublique</label>
+        <input clrInput formControlName="PrixPublique"/>
+    </clr-input-container>
+    <clr-select-container>
+        <label>Statut</label>
+        <select clrSelect formControlName="Statut">
+            <option value="Publie">Publie</option>
+            <option value="Archive">Archive</option>
+        </select>
+    </clr-select-container>
+    <button class="btn btn-primary">Create</button>
+    <button class="btn btn-danger" (click)="formClose.emit()">Cancel</button>
+
+</form>

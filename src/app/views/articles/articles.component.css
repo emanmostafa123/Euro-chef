@@ -1,0 +1,41 @@
+.table-div{
+    width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+.box{
+    margin: 2%;
+    border: 1px solid rgb(209, 209, 209);
+    height: max-content;
+    padding-bottom: 10%;
+}
+.Visualisation{
+    margin-left: 69%;
+}
+.btn-div{
+    width: 4%;
+    margin-left: 1%;
+    margin-top: 4%;
+}
+
+.btn-div button{
+    display: block;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    color: brown;
+    background-color: white;
+    border: 1px solid brown;
+    margin-left: 2px;
+}
+
+.btn-div button:hover{
+    color: white;
+    background-color: brown;
+    border: 1px solid white;
+}

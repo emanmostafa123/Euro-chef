@@ -1,0 +1,7 @@
+clr-dg-row:nth-child(even){
+    background-color: #f6f6f6;
+}
+
+clr-dg-row:hover {
+    background-color: #ddd;
+}

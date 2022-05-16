@@ -1,0 +1,47 @@
+.table-div{
+    background-color: #f2f2f2;
+}
+
+
+
+
+h1{
+    font-weight: 900;
+    text-align: center;
+    color: brown;
+    margin:5% 0%;
+}
+
+.btn-div{
+    margin-left: auto;
+    display: flex;
+}
+
+.btn-div button{
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    color: brown;
+    background-color: white;
+    border: 1px solid brown;
+    margin-left: 2px;
+}
+
+.btn-div button:hover{
+    color: white;
+    background-color: brown;
+    border: 1px solid white;
+}
+h3{
+    font-weight: 900;
+    color: brown;
+}
+
+.text-div{
+    background-color: #f2f2f2;
+    padding: 5px 10px ;
+    line-height: 1px;
+}
+.text-div p{
+    margin-top: 0px;
+}
